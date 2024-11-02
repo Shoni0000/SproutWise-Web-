@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Plant Database</title>
+</head>
+<body>
+    <h1>Plant Database</h1>
+    <form method="post">
+        <label for="plant_name">Plant Name:</label>
+        <input type="text" id="plant_name" name="plant_name"><br><br>
+        <label for="watering_instructions">Watering Instructions:</label>
+        <textarea id="watering_instructions" name="watering_instructions"></textarea><br><br>
+        <label for="soil_instructions">Soil Instructions:</label>
+        <textarea id="soil_instructions" name="soil_instructions"></textarea><br><br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>
